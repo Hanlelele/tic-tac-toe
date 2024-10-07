@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+.game {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.board-row:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    width: 40px;
+    height: 40px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    border-radius: 0;
+}
+
+.square:active,
+.square:focus {
+    outline: none;
+}
+
+.square:hover {
+    border: 2px solid orange;
+    z-index: 10;
+}
+
+.square-winning {
+    background-color: yellow; /* Highlight winning squares with a yellow background */
+}
+
+.status {
+    margin-bottom: 20px;
+}
+
+li {
+    margin: 5px;
+}
+h4 {
+    margin: 0;
+}
